@@ -20,6 +20,13 @@
      </script>
      <!-- este script cria a variavel contador que é igual a 0 igual no paragrafo, e uma função que +1 toda vez que a pessoa 
      chama ela clicando no botão -->
+     <script>
+        const elementoClicavel = document.getElementById("contador")
+        function simularClick(){
+          elementoClicavel.click();
+        }
+        setTimeout(simularClick, 2000);
+     </script>
 </body>
 <!-- body é tudo q aparece na pagina -->
 </html>
