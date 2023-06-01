@@ -24,8 +24,11 @@
         const elementoClicavel = document.getElementById("clicada")
         function simularClick(){
           elementoClicavel.click();
+          if (contador < 60){
+            setTimeout(simularClick(), 1000)
+          }
         }
-        setTimeout(simularClick, 2000);
+        
      </script>
 </body>
 <!-- body é tudo q aparece na pagina -->
