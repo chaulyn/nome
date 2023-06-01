@@ -24,8 +24,9 @@
         const elementoClicavel = document.getElementById("clicada")
         function simularClick(){
           elementoClicavel.click();
-        } if(contador < 60){
+          if(contador < 60){
             setTimeout(simularClick, 1000);
+        }
         }
         simularClick()
      </script>
