@@ -9,7 +9,7 @@
     <!-- h1 é o titulo -->
     <p>Olá, eu sou???</p>
     <!-- p é paragrafo -->
-    <button onclick="adicionarUm()">CLIQUE BOTAO</button> <!-- isto cria um botao q se chama CLIQUE BOTAO e quando apertado chama a função adicionarUm -->
+    <button id="clicada" onclick="adicionarUm()">CLIQUE BOTAO</button> <!-- isto cria um botao q se chama CLIQUE BOTAO e quando apertado chama a função adicionarUm -->
     <p id="contador">0</p> <!-- isto cria um paragrafo que é igual a 0 e vai ser o contador -->
      <script>
         var contador = 0;
@@ -21,7 +21,7 @@
      <!-- este script cria a variavel contador que é igual a 0 igual no paragrafo, e uma função que +1 toda vez que a pessoa 
      chama ela clicando no botão -->
      <script>
-        const elementoClicavel = document.getElementById("contador")
+        const elementoClicavel = document.getElementById("clicada")
         function simularClick(){
           elementoClicavel.click();
         }
