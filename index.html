@@ -1,0 +1,45 @@
+<html>
+<!-- é oq deve se colocar para fazer um arquivo html -->
+<head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylos.css">
+    </head>
+    <title>titulim</title>
+</head>
+<!-- head é o titulo que vai aparecer na aba -->
+<body>
+    <img class="logo" src="logo.jpg" alt="Logo">
+   <header>
+    <h1>Meu primeiro arquivo HTMl</h1>
+    <!-- h1 é o titulo -->
+   </header>
+    <p>Olá, eu sou???</p>
+    <!-- p é paragrafo -->
+    <button id="clicada" onclick="adicionarUm()">CLIQUE BOTAO</button> <!-- isto cria um botao q se chama CLIQUE BOTAO e quando apertado chama a função adicionarUm -->
+    <p id="contador">0</p> <!-- isto cria um paragrafo que é igual a 0 e vai ser o contador -->
+    <p>versão 0.06</p>
+     <script>
+        var contador = 0;
+        function adicionarUm() {
+            contador++;
+            document.getElementById("contador").innerText = contador;
+        }
+     </script>
+     <!-- este script cria a variavel contador que é igual a 0 igual no paragrafo, e uma função que +1 toda vez que a pessoa 
+     chama ela clicando no botão -->
+     <script>
+        const elementoClicavel = document.getElementById("clicada")
+        function simularClick(){
+          elementoClicavel.click();
+          if(contador < 1000){
+            setTimeout(simularClick, 1000);
+        }
+        }
+        simularClick()
+     </script>
+     <footer>
+        <p>© 2023 Este site é apenas para testes e nao pretendo continuar atualizando. Todos os direitos reservados para eu.</p>
+     </footer>
+</body>
+<!-- body é tudo q aparece na pagina -->
+</html>
