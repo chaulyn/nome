@@ -1,0 +1,33 @@
+body {
+    font-family: cursive;
+    background-color: #353535;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+h1 {
+    color: yellow;
+    height: 3vh;
+}
+p {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #000000;
+    color: yellow;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+#contador {
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,11 +1,14 @@
 <html>
 <!-- é oq deve se colocar para fazer um arquivo html -->
 <head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylos.css">
+    </head>
     <title>titulim</title>
 </head>
 <!-- head é o titulo que vai aparecer na aba -->
 <body>
-    <h1>Meu primeiro arquivo HTML</h1>
+    <h1 style="color:yellow">Meu primeiro arquivo HTML</h1>
     <!-- h1 é o titulo -->
     <p>Olá, eu sou???</p>
     <!-- p é paragrafo -->
@@ -24,7 +27,7 @@
         const elementoClicavel = document.getElementById("clicada")
         function simularClick(){
           elementoClicavel.click();
-          if(contador < 60){
+          if(contador < 1000){
             setTimeout(simularClick, 1000);
         }
         }
